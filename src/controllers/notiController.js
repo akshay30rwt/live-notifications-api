@@ -47,3 +47,5 @@ const unreadCount = async (req, res, next) => {
         next(error);
     }
 };
+
+module.exports = { getNotifications, markRead, unreadCount };
