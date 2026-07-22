@@ -24,7 +24,7 @@ app.use(limiter);
 
 app.use(express.json());
 app.use('/auth', authRoutes);
-app.use('/notifications', messageRoutes);
+app.use('/notifications', notiRoutes);
 app.use(errorHandler);
 
 module.exports = app;
